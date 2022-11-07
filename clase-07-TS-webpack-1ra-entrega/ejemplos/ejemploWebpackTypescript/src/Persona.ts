@@ -7,7 +7,7 @@ export default class Persona {
     this.lname = lname;
   }
 
-  getFullName(): string {
+  getFullName() {
     return `${this.fname} ${this.lname}`;
   }
 }
