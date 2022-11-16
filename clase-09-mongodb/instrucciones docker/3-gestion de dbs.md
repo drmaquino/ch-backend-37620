@@ -8,3 +8,6 @@
 
 # Borra la base de datos en uso
     db.dropDatabase()
+
+# Borra una coleccion
+    db.[nombre de la coleccion].drop()
