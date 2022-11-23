@@ -17,21 +17,12 @@ class ContenedorArchivo {
             const objs = await fs.readFile(this.ruta, 'utf-8')
             return JSON.parse(objs)
         } catch (error) {
-            return []
+            throw new Error('Error al leer el archivo: ' + this.ruta)
         }
     }
 
-    async guardar(obj) {
+    async guardar(newObj) {
         const objs = await this.listarAll()
-
-        let newId
-        if (objs.length == 0) {
-            newId = 1
-        } else {
-            newId = objs[ objs.length - 1 ].id + 1
-        }
-
-        const newObj = { ...obj, id: newId }
         objs.push(newObj)
 
         try {
@@ -46,9 +37,9 @@ class ContenedorArchivo {
         const objs = await this.listarAll()
         const index = objs.findIndex(o => o.id == elem.id)
         if (index == -1) {
-            throw new Error(`Error al actualizar: no se encontró el id ${id}`)
+            throw new Error(`Error al actualizar: no se encontró el id ${elem.id}`)
         } else {
-            objs[ index ] = elem
+            objs[index] = elem
             try {
                 await fs.writeFile(this.ruta, JSON.stringify(objs, null, 2))
             } catch (error) {
@@ -64,7 +55,7 @@ class ContenedorArchivo {
             throw new Error(`Error al borrar: no se encontró el id ${id}`)
         }
 
-        const deleted = objs.splice(index, 1)[ 0 ]
+        const deleted = objs.splice(index, 1)[0]
         try {
             await fs.writeFile(this.ruta, JSON.stringify(objs, null, 2))
         } catch (error) {

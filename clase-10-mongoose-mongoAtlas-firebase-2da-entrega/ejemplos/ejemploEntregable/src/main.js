@@ -1,3 +1,4 @@
+// @ts-nocheck
 import app from './server.js'
 
 const PORT = 8080

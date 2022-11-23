@@ -1,4 +1,6 @@
-export default {
+import mongoose from 'mongoose'
+
+const config = {
     fileSystem: {
         path: './DB'
     },
@@ -14,3 +16,7 @@ export default {
     firebase: {
     }
 }
+
+await mongoose.connect(config.mongodb.cnxStr, config.mongodb.options)
+
+export default config

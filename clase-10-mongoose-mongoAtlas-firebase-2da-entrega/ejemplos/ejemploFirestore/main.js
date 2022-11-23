@@ -1,11 +1,11 @@
 import admin from "firebase-admin"
-import fs from 'fs'
+// import serviceAccount from './db/coderhouse37620-firebase-adminsdk-c6fch-b199ede224.json' assert {type: 'json'}
 
-const serviceAccount = JSON.parse(fs.readFileSync("./db/coderhouse-27fef-firebase-adminsdk-akmqd-d849519215.json", 'utf8'))
+import fs from 'fs'
+const serviceAccount = JSON.parse(fs.readFileSync("./db/coderhouse37620-firebase-adminsdk-c6fch-b199ede224.json", 'utf8'))
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://carbon-nucleus-264418.firebaseio.com"
 });
 
 const asObj = doc => ({ id: doc.id, ...doc.data() })
@@ -33,28 +33,28 @@ console.dir(asObj(await dbNombres.doc(guardado.id).get()))
 
 await dbNombres.doc(guardado.id).delete();
 
-//------------------------------------------------
+// //------------------------------------------------
 
-// version fea e ineficiente pero entendible para empezar
-try {
-    const dbColores = db.collection('colores')
-    const ids = []
-    const snapshot = await dbColores.get();
-    snapshot.forEach(doc => {
-        ids.push(doc.id)
-    })
-    const promesas = ids.map(id => dbColores.doc(id).delete())
-    const resultados = await Promise.allSettled(promesas)
-    const errores = resultados.filter(r => r.status == 'rejected')
-    if (errores.length > 0) {
-        throw new Error('no se borró todo. volver a intentarlo')
-    }
-    // const ref = firestore.collection(path)
-    // ref.onSnapshot((snapshot) => {
-    //     snapshot.docs.forEach((doc) => {
-    //         ref.doc(doc.id).delete()
-    //     })
-    // })
-} catch (error) {
-    throw new Error(`Error al borrar: ${error}`)
-}
+// // version fea e ineficiente pero entendible para empezar
+// try {
+//     const dbColores = db.collection('colores')
+//     const ids = []
+//     const snapshot = await dbColores.get();
+//     snapshot.forEach(doc => {
+//         ids.push(doc.id)
+//     })
+//     const promesas = ids.map(id => dbColores.doc(id).delete())
+//     const resultados = await Promise.allSettled(promesas)
+//     const errores = resultados.filter(r => r.status == 'rejected')
+//     if (errores.length > 0) {
+//         throw new Error('no se borró todo. volver a intentarlo')
+//     }
+//     // const ref = firestore.collection(path)
+//     // ref.onSnapshot((snapshot) => {
+//     //     snapshot.docs.forEach((doc) => {
+//     //         ref.doc(doc.id).delete()
+//     //     })
+//     // })
+// } catch (error) {
+//     throw new Error(`Error al borrar: ${error}`)
+// }
