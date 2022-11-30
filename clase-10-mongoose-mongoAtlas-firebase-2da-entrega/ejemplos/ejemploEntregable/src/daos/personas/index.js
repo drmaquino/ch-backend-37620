@@ -1,8 +1,8 @@
-import config from '../../config.js'
+import config, { TIPO_PERS } from '../../config.js'
 
 let personasDao
 
-switch (process.env.PERS) {
+switch (TIPO_PERS) {
     case 'json':
         const { default: PersonasDaoArchivo } = await import('./PersonasDaoArchivo.js')
         personasDao = new PersonasDaoArchivo(config.fileSystem.path)

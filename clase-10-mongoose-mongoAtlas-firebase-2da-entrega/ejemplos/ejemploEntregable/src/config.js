@@ -19,4 +19,6 @@ const config = {
 
 await mongoose.connect(config.mongodb.cnxStr, config.mongodb.options)
 
+export const TIPO_PERS = /* process.env.PERS ?? */ 'json'
+
 export default config
