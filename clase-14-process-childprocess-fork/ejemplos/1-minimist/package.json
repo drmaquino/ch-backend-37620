@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "minimist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "minimist.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
