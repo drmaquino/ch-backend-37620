@@ -1,0 +1,118 @@
+resumen de carpetas importantes en LINUX:
+
+/etc/nginx/conf.d/
+acá suelto los archivos con configuración de mis servidores!
+
+/var/www/
+acá meto mis archivos estaticos para compartir!
+
+o es aca...?
+/usr/share/nginx/html
+
+----------------------------------------------------
+
+RECURSOS:
+
+https://www.youtube.com/watch?v=xJ7BKnZbwCU
+https://youtu.be/_LQv96MdtCk?list=PLqRCtm0kbeHD7A5f8Yft-5qFg-sgXvGzR
+
+----------------------------------------------------
+(sudo apt remove nginx* && sudo apt autoremove)
+
+sudo apt install nginx
+
+borrar la configuracion por defecto:
+
+sudo rm -r /etc/nginx/sites-enabled/default
+
+en la carpeta: /etc/nginx/conf.d
+crear archivo de configuracion (nombre ej: reverse-proxy.conf):
+
+upstream backend {
+
+  server localhost:8081;
+  server localhost:8082;
+  server localhost:8083;
+  server localhost:8084;
+}
+
+server {
+  listen 80;
+  location / {
+    proxy_pass http://backend;
+  }
+}
+
+backend es el nombre que elegí yo para mi cluster de servidores.
+nginx por defecto usa algoritmo de round robin para elegir a quien enviar las peticiones.
+
+se  puede cambiar por otros. por ej:
+
+upstream backend {
+
+  ip_hash;
+
+  server localhost:8081;
+  server localhost:8082;
+  server localhost:8083;
+  server localhost:8084;
+}
+
+tambien se puede aumentar la carga de algun servidor en particular:
+
+upstream backend {
+
+  server localhost:8081;
+  server localhost:8082;
+  server localhost:8083;
+  server localhost:8084 weight=4;
+}
+
+en este ejemplo, el puerto 8084 recibe 4 veces mas peticiones que los demás
+
+---
+
+cada uno de los "server" se comporta segun lo configurado en la segunda parte:
+recibe peticiones en el puerto 80, y todas las peticiones que reciba en la ruta '/' las redirige al cluster "backend" definido anteriormente.
+
+para que los cambios surtan efecto, reinicio el servicio:
+
+sudo /etc/init.d/nginx restart
+
+tambien puedo usar:
+systemctl [ start | stop | reload? ] nginx.service
+
+----------------------------------------------------
+
+levantar 4 servidores usando pm2. luego, dirigirse a 'localhost' en un navegador. refrescar y ver como alterna entre los 4 servidores.
+
+----------------------------------------------------
+
+// https://stackoverflow.com/questions/12806893/use-nginx-to-serve-static-files-from-subdirectories-of-a-given-directory
+
+si queremos servir archivos estaticos, podemos redirigir peticiones a documentos en carpetas:
+
+server {
+  listen 80;
+
+  location / {
+    proxy_pass http://backend;
+  }
+  
+  location /public/ {
+    alias /var/www/public/;
+  }
+}
+
+así, todo lo que llegue a traves del puerto 80 a [host]/public/xxx
+se redirige a /var/www/public/xxx
+
+[ root concatena a la ruta, mientras que alias reemplaza la ruta! ]
+
+-----------------------------------------------------------------
+
+instrucciones con DOCKER:
+
+para usar volumenes?
+-v /home/<user>/data:/data
+
