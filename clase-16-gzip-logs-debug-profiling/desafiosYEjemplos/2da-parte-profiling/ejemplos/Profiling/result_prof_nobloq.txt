@@ -1,0 +1,761 @@
+Statistical profiling result from isolate_nobloq.log, (1917 ticks, 2 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   1294   67.5%          /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+     81    4.2%          /usr/lib/x86_64-linux-gnu/libc.so.6
+      4    0.2%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     13    0.7%    2.4%  LazyCompile: *normalizeString node:path:66:25
+      3    0.2%    0.6%  Function: ^nextTick node:internal/process/task_queues:104:18
+      2    0.1%    0.4%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      2    0.1%    0.4%  LazyCompile: *next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:177:16
+      2    0.1%    0.4%  LazyCompile: *fastparse /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/parseurl/index.js:95:20
+      2    0.1%    0.4%  Function: ^validateNumber node:internal/validators:175:24
+      2    0.1%    0.4%  Function: ^restore /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:631:17
+      2    0.1%    0.4%  Function: ^pushAsyncContext node:internal/async_hooks:539:26
+      1    0.1%    0.2%  RegExp: ^\/auth-nobloq\/?$
+      1    0.1%    0.2%  RegExp: [!@#$%^&*]
+      1    0.1%    0.2%  Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1    0.1%    0.2%  Function: ^tryReadSync node:fs:434:21
+      1    0.1%    0.2%  Function: ^sendFile /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:712:51
+      1    0.1%    0.2%  Function: ^resetSocketTimeout node:_http_server:1004:28
+      1    0.1%    0.2%  Function: ^realpathSync node:fs:2455:22
+      1    0.1%    0.2%  Function: ^parseQueryStringKeys /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:150:46
+      1    0.1%    0.2%  Function: ^parseObject /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:115:28
+      1    0.1%    0.2%  Function: ^parseArrayValue /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:33:32
+      1    0.1%    0.2%  Function: ^normalizeParseOptions /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:204:59
+      1    0.1%    0.2%  Function: ^isBuffer node:buffer:515:36
+      1    0.1%    0.2%  Function: ^header /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:777:29
+      1    0.1%    0.2%  Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:136:31
+      1    0.1%    0.2%  Function: ^get node:internal/streams/duplex:97:8
+      1    0.1%    0.2%  Function: ^fromString node:buffer:437:20
+      1    0.1%    0.2%  Function: ^fastparse /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/parseurl/index.js:95:20
+      1    0.1%    0.2%  Function: ^end node:_http_outgoing:953:45
+      1    0.1%    0.2%  Function: ^emitBeforeScript node:internal/async_hooks:509:26
+      1    0.1%    0.2%  Function: ^emit node:events:460:44
+      1    0.1%    0.2%  Function: ^dispatch /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:98:45
+      1    0.1%    0.2%  Function: ^createHash node:crypto:129:20
+      1    0.1%    0.2%  Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      1    0.1%    0.2%  Function: ^Readable.resume node:internal/streams/readable:963:37
+      1    0.1%    0.2%  Function: ^Readable.removeAllListeners node:internal/streams/readable:922:49
+      1    0.1%    0.2%  Function: ^Readable.on node:internal/streams/readable:874:33
+      1    0.1%    0.2%  Function: ^<anonymous> node:_http_outgoing:618:45
+      1    0.1%    0.2%  Function: ^<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:280:64
+      1    0.1%    0.2%  Function: ^<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/request.js:467:36
+
+ [C++]:
+   ticks  total  nonlib   name
+    234   12.2%   43.5%  epoll_pwait@@GLIBC_2.6
+    131    6.8%   24.3%  __write@@GLIBC_2.2.5
+     35    1.8%    6.5%  fwrite@@GLIBC_2.2.5
+     12    0.6%    2.2%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     10    0.5%    1.9%  _IO_file_xsputn@@GLIBC_2.2.5
+      9    0.5%    1.7%  __read@@GLIBC_2.2.5
+      7    0.4%    1.3%  __mprotect@@GLIBC_PRIVATE
+      6    0.3%    1.1%  pthread_cond_signal@@GLIBC_2.3.2
+      6    0.3%    1.1%  __libc_malloc@@GLIBC_2.2.5
+      4    0.2%    0.7%  getrusage@@GLIBC_2.2.5
+      3    0.2%    0.6%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      3    0.2%    0.6%  cfree@GLIBC_2.2.5
+      3    0.2%    0.6%  __pthread_mutex_lock@GLIBC_2.2.5
+      2    0.1%    0.4%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      2    0.1%    0.4%  operator new(unsigned long)@@GLIBCXX_3.4
+      2    0.1%    0.4%  __madvise@@GLIBC_PRIVATE
+      1    0.1%    0.2%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      1    0.1%    0.2%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      1    0.1%    0.2%  std::locale::id::_M_id() const@@GLIBCXX_3.4
+      1    0.1%    0.2%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.1%    0.2%  operator delete[](void*)@@GLIBCXX_3.4
+      1    0.1%    0.2%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      1    0.1%    0.2%  __pthread_rwlock_unlock@GLIBC_2.2.5
+      1    0.1%    0.2%  __pthread_rwlock_tryrdlock@GLIBC_2.2.5
+      1    0.1%    0.2%  __pthread_mutex_unlock@GLIBC_2.2.5
+      1    0.1%    0.2%  __munmap@@GLIBC_PRIVATE
+
+ [Summary]:
+   ticks  total  nonlib   name
+     57    3.0%   10.6%  JavaScript
+    479   25.0%   89.0%  C++
+     96    5.0%   17.8%  GC
+   1379   71.9%          Shared libraries
+      2    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     72   47.4%    3.8%  __write@@GLIBC_2.2.5
+     35   23.0%    1.8%  fwrite@@GLIBC_2.2.5
+     10    6.6%    0.5%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+      8    5.3%    0.4%  _IO_file_xsputn@@GLIBC_2.2.5
+      6    3.9%    0.3%  __libc_malloc@@GLIBC_2.2.5
+      3    2.0%    0.2%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      3    2.0%    0.2%  __pthread_mutex_lock@GLIBC_2.2.5
+      2    1.3%    0.1%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      2    1.3%    0.1%  operator new(unsigned long)@@GLIBCXX_3.4
+      2    1.3%    0.1%  __mprotect@@GLIBC_PRIVATE
+      1    0.7%    0.1%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      1    0.7%    0.1%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      1    0.7%    0.1%  std::locale::id::_M_id() const@@GLIBCXX_3.4
+      1    0.7%    0.1%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.7%    0.1%  operator delete[](void*)@@GLIBCXX_3.4
+      1    0.7%    0.1%  cfree@GLIBC_2.2.5
+      1    0.7%    0.1%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      1    0.7%    0.1%  __pthread_rwlock_tryrdlock@GLIBC_2.2.5
+      1    0.7%    0.1%  __pthread_mutex_unlock@GLIBC_2.2.5
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1294   67.5%  /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+    719   55.6%    /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+     79   11.0%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     71   89.9%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+     11   15.5%          Function: ~<anonymous> node:crypto:1:1
+     11  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      9   12.7%          Function: ~<anonymous> node:http:1:1
+      9  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5    7.0%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5    7.0%          Function: ~<anonymous> node:child_process:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    5.6%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    5.6%          Function: ~<anonymous> node:internal/child_process:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    5.6%          Function: ~<anonymous> node:_http_client:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    4.2%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    4.2%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    4.2%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.8%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      2  100.0%            LazyCompile: ~get node:crypto:294:8
+      2    2.8%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      2  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:147:60
+      2    2.8%          Function: ~<anonymous> node:internal/modules/esm/translators:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.8%          Function: ~<anonymous> node:internal/blocklist:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.4%          LazyCompile: ~lazyLoadStreams node:fs:2888:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:3031:17
+      1    1.4%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:521:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1    1.4%          LazyCompile: ~get BlockList node:net:1957:16
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1    1.4%          Function: ~<anonymous> node:tty:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.4%          Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.4%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.4%          Function: ~<anonymous> node:internal/crypto/util:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.4%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.4%          Function: ~<anonymous> node:internal/cluster/round_robin_handle:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.4%          Function: ~<anonymous> node:cluster:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.4%          Function: ~<anonymous> node:_http_outgoing:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.4%          Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    5.1%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      3   75.0%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:45:26
+      2   66.7%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:253:58
+      1   33.3%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:800:24
+      1   25.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:45:26
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:800:24
+      4    5.1%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      4  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:45:26
+      4  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:800:24
+     63    8.8%      Function: ^stat node:fs:1500:14
+     63  100.0%        Function: ^sendFile /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:712:51
+     59   93.7%          Function: ^pipe /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:506:43
+     59  100.0%            Function: ^serveStatic /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/serve-static/index.js:72:31
+      4    6.3%          LazyCompile: ~pipe /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:506:43
+      3   75.0%            Function: ^serveStatic /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/serve-static/index.js:72:31
+      1   25.0%            LazyCompile: ~serveStatic /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/serve-static/index.js:72:31
+     52    7.2%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+     51   98.1%        Function: ^Socket._writeGeneric node:net:879:42
+     51  100.0%          Function: ^Socket._writev node:net:911:36
+     51  100.0%            Function: ^doWrite node:internal/streams/writable:400:17
+      1    1.9%        LazyCompile: ~Socket._writeGeneric node:net:879:42
+      1  100.0%          Function: ^Socket._writev node:net:911:36
+      1  100.0%            LazyCompile: ~doWrite node:internal/streams/writable:400:17
+     51    7.1%      Function: ^compileFunction node:vm:316:25
+     44   86.3%        Function: ^wrapSafe node:internal/modules/cjs/loader:1069:18
+     41   93.2%          Function: ^Module._compile node:internal/modules/cjs/loader:1109:37
+     25   61.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1164:37
+     16   39.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1164:37
+      3    6.8%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1109:37
+      3  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1164:37
+      7   13.7%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1069:18
+      7  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1109:37
+      7  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1164:37
+     38    5.3%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     35   92.1%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+     10   28.6%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+     10  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      8   22.9%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      8  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    8.6%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:521:29
+      3  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      3    8.6%          Function: ~<anonymous> node:net:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    8.6%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    5.7%          Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    5.7%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    2.9%          LazyCompile: ~initializeReport node:internal/bootstrap/pre_execution:278:26
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1    2.9%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    2.9%          Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    2.9%          Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    7.9%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      2   66.7%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1   33.3%          LazyCompile: ~setupInspectorHooks node:internal/bootstrap/pre_execution:329:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+     33    4.6%      /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      3    9.1%        Function: ^parseQueryStringValues /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:51:50
+      3  100.0%          Function: ^module.exports /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:239:27
+      3  100.0%            Function: ^parseExtendedQueryString /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/utils.js:289:34
+      3    9.1%        Function: ^header /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:777:29
+      3  100.0%          Function: ^contentType /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:619:32
+      3  100.0%            Function: ^sendStatus /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:369:37
+      3    9.1%        Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      3  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:304:14
+      3  100.0%            LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:290:15
+      3    9.1%        Function: ^expressInit /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/middleware/init.js:29:30
+      3  100.0%          Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      3  100.0%            Function: ^trim_prefix /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:293:23
+      2    6.1%        Function: ^realpathSync node:fs:2455:22
+      2  100.0%          Function: ^toRealPath node:internal/modules/cjs/loader:433:20
+      2  100.0%            Function: ^tryFile node:internal/modules/cjs/loader:424:17
+      2    6.1%        Function: ^pipe /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:506:43
+      2  100.0%          Function: ^serveStatic /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/serve-static/index.js:72:31
+      2  100.0%            Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      2    6.1%        Function: ^format /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/content-type/index.js:65:17
+      2  100.0%          Function: ^setCharset /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/utils.js:248:41
+      2  100.0%            Function: ^send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:111:25
+      1    3.0%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:400:36
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:468:30
+      1  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:468:30
+      1    3.0%        LazyCompile: ~primordials.SafePromiseAll node:internal/per_context/primordials:449:30
+      1  100.0%          LazyCompile: ~import node:internal/modules/esm/loader:505:15
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/modules/run_main:55:29
+      1    3.0%        LazyCompile: ~populateMaps /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/mime-types/index.js:154:23
+      1  100.0%          Function: ~<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/mime-types/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1109:37
+      1    3.0%        LazyCompile: ~pathtoRegexp /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/path-to-regexp/index.js:28:22
+      1  100.0%          LazyCompile: ~Layer /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:33:15
+      1  100.0%            LazyCompile: ~use /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:439:25
+      1    3.0%        LazyCompile: ~parseObject /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:115:28
+      1  100.0%          LazyCompile: ~parseQueryStringKeys /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:150:46
+      1  100.0%            LazyCompile: ~module.exports /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:239:27
+      1    3.0%        LazyCompile: ~merge /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/merge-descriptors/index.js:34:15
+      1  100.0%          LazyCompile: ~createApplication /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/express.js:37:27
+      1  100.0%            Script: ~<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:1:1
+      1    3.0%        LazyCompile: ~match /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%          LazyCompile: ~matchLayer /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:583:20
+      1  100.0%            LazyCompile: ~next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:177:16
+      1    3.0%        LazyCompile: ~lookup /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/mime/mime.js:102:19
+      1  100.0%          LazyCompile: ~header /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:777:29
+      1  100.0%            LazyCompile: ~contentType /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:619:32
+      1    3.0%        LazyCompile: ~format /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/content-type/index.js:65:17
+      1  100.0%          LazyCompile: ~setCharset /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/utils.js:248:41
+      1  100.0%            LazyCompile: ~send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:111:25
+      1    3.0%        Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1    3.0%        Function: ^stat node:internal/modules/cjs/loader:157:14
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:424:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:440:23
+      1    3.0%        Function: ^readPackage node:internal/modules/cjs/loader:319:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:361:26
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1164:37
+      1    3.0%        Function: ^parseObject /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:115:28
+      1  100.0%          Function: ^parseQueryStringKeys /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:150:46
+      1  100.0%            Function: ^module.exports /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:239:27
+      1    3.0%        Function: ^inherits node:util:235:18
+      1  100.0%          Function: ^createClientErrorConstructor /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/http-errors/index.js:127:39
+      1  100.0%            Function: ^forEachCode /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/http-errors/index.js:259:38
+      1    3.0%        Function: ^<anonymous> node:internal/fs/utils:360:35
+      1  100.0%          Function: ^<anonymous> node:internal/fs/utils:671:38
+      1  100.0%            Function: ^<anonymous> node:internal/fs/utils:683:42
+     15    2.1%      Function: ^nextTick node:internal/process/task_queues:104:18
+      5   33.3%        Function: ^emitReadable node:internal/streams/readable:563:22
+      5  100.0%          Function: ^onEofChunk node:internal/streams/readable:533:20
+      5  100.0%            Function: ^readableAddChunk node:internal/streams/readable:236:26
+      4   26.7%        Function: ^resume node:internal/streams/readable:977:16
+      4  100.0%          Function: ^Readable.resume node:internal/streams/readable:963:37
+      3   75.0%            Function: ^_dump node:_http_incoming:419:49
+      1   25.0%            Function: ^Socket.resume node:net:715:35
+      3   20.0%        Function: ^onDestroy node:internal/streams/destroy:73:21
+      3  100.0%          Function: ^onError node:_http_incoming:429:17
+      3  100.0%            Function: ^_destroy node:_http_incoming:221:55
+      1    6.7%        LazyCompile: ~endReadable node:internal/streams/readable:1341:21
+      1  100.0%          LazyCompile: ~Readable.read node:internal/streams/readable:394:35
+      1  100.0%            LazyCompile: ~resume_ node:internal/streams/readable:984:17
+      1    6.7%        Function: ^resOnFinish node:_http_server:833:21
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            Function: ^onFinish node:_http_outgoing:948:18
+      1    6.7%        Function: ^onwrite node:internal/streams/writable:427:17
+      1  100.0%          Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      1  100.0%            Function: ^writevGeneric node:internal/stream_base_commons:122:23
+     14    1.9%      Function: ^readSync node:fs:695:18
+     14  100.0%        Function: ^tryReadSync node:fs:434:21
+     14  100.0%          Function: ^readFileSync node:fs:455:22
+      8   57.1%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1164:37
+      5   35.7%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1164:37
+      1    7.1%            LazyCompile: ~Module._extensions..json node:internal/modules/cjs/loader:1214:39
+     12    1.7%      Function: ^read node:internal/modules/package_json_reader:16:14
+     12  100.0%        Function: ^readPackage node:internal/modules/cjs/loader:319:21
+     11   91.7%          Function: ^resolveExports node:internal/modules/cjs/loader:512:24
+     11  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:534:28
+      1    8.3%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:512:24
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:534:28
+     12    1.7%      Function: ^expressInit /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/middleware/init.js:29:30
+     12  100.0%        Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+     12  100.0%          Function: ^trim_prefix /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:293:23
+      8   66.7%            LazyCompile: *next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:177:16
+      4   33.3%            Function: ^<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:280:64
+     12    1.7%      Function: ^end node:_http_outgoing:953:45
+     12  100.0%        Function: ^send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:111:25
+     12  100.0%          Function: ^sendStatus /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:369:37
+     12  100.0%            Function: ^<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:55:25
+     10    1.4%      Function: ^resOnFinish node:_http_server:833:21
+     10  100.0%        Function: ^emit node:events:460:44
+     10  100.0%          Function: ^onFinish node:_http_outgoing:948:18
+     10  100.0%            Function: ^callback node:internal/streams/writable:552:44
+     10    1.4%      Function: ^endReadableNT node:internal/streams/readable:1351:23
+      8   80.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      2   20.0%        LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+     10    1.4%      Function: ^Hash node:internal/crypto/hash:62:14
+     10  100.0%        Function: ^createHash node:crypto:129:20
+     10  100.0%          Function: ^entitytag /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/etag/index.js:39:20
+     10  100.0%            Function: ^etag /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/etag/index.js:70:15
+      8    1.1%      Function: ^writeHead node:_http_server:309:19
+      8  100.0%        Function: ^_implicitHeader node:_http_server:304:68
+      8  100.0%          Function: ^write_ node:_http_outgoing:831:16
+      8  100.0%            Function: ^end node:_http_outgoing:953:45
+      8    1.1%      Function: ^sendStatus /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:369:37
+      8  100.0%        Function: ^<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:55:25
+      8  100.0%          Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      8  100.0%            Function: ^next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:116:16
+      8    1.1%      Function: ^send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:111:25
+      8  100.0%        Function: ^sendStatus /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:369:37
+      8  100.0%          Function: ^<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:55:25
+      8  100.0%            Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      8    1.1%      Function: ^resume_ node:internal/streams/readable:984:17
+      8  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      8    1.1%      Function: ^parserOnMessageComplete node:_http_common:146:33
+      8    1.1%      Function: ^_storeHeader node:_http_outgoing:420:22
+      8  100.0%        Function: ^writeHead node:_http_server:309:19
+      8  100.0%          Function: ^_implicitHeader node:_http_server:304:68
+      8  100.0%            Function: ^write_ node:_http_outgoing:831:16
+     14    1.1%    Function: ^module.exports /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:239:27
+     14  100.0%      Function: ^parseExtendedQueryString /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/utils.js:289:34
+     14  100.0%        Function: ^query /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/middleware/query.js:39:24
+     14  100.0%          Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+     14  100.0%            Function: ^trim_prefix /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:293:23
+
+    234   12.2%  epoll_pwait@@GLIBC_2.6
+
+    131    6.8%  __write@@GLIBC_2.2.5
+     72   55.0%    /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      3    4.2%      LazyCompile: ~module.exports /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:239:27
+      3  100.0%        LazyCompile: ~parseExtendedQueryString /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/utils.js:289:34
+      3  100.0%          LazyCompile: ~query /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/middleware/query.js:39:24
+      2   66.7%            LazyCompile: ~handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      1   33.3%            Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      3    4.2%      LazyCompile: ~append node:internal/linkedlist:30:16
+      3  100.0%        LazyCompile: ~insert node:internal/timers:350:16
+      3  100.0%          Function: ^setUnrefTimeout node:internal/timers:372:25
+      3  100.0%            LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:237:26
+      3    4.2%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      3  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      3  100.0%            Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      2    2.8%      LazyCompile: ~spliceOne node:internal/util:404:19
+      2  100.0%        LazyCompile: ~removeListener node:events:675:28
+      2  100.0%          Function: ^Readable.removeListener node:internal/streams/readable:904:45
+      2  100.0%            Function: ^detachSocket node:_http_server:288:62
+      2    2.8%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:168:29
+      2  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      2  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    2.8%      LazyCompile: ~get node:internal/bootstrap/pre_execution:426:8
+      2  100.0%        /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      2  100.0%          LazyCompile: ~etag /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/etag/index.js:70:15
+      2  100.0%            LazyCompile: ~generateETag /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/utils.js:273:32
+      2    2.8%      LazyCompile: ~<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:55:25
+      2  100.0%        Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%          LazyCompile: ~next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:116:16
+      2  100.0%            Function: ^dispatch /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:98:45
+      1    1.4%      LazyCompile: ~value node:internal/console/constructor:336:20
+      1  100.0%        LazyCompile: ~log node:internal/console/constructor:375:6
+      1  100.0%          /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      1  100.0%            LazyCompile: ~<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:77:33
+      1    1.4%      LazyCompile: ~trim_prefix /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:293:23
+      1  100.0%        Function: ^<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:280:64
+      1  100.0%          Function: ^process_params /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:338:47
+      1  100.0%            Function: ^next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:177:16
+      1    1.4%      LazyCompile: ~toString node:buffer:790:46
+      1  100.0%        LazyCompile: ~decode node:internal/encoding:412:11
+      1  100.0%          LazyCompile: ~stringify node:internal/modules/esm/translators:94:19
+      1  100.0%            LazyCompile: ~moduleStrategy node:internal/modules/esm/translators:114:56
+      1    1.4%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1    1.4%      LazyCompile: ~splitRoot node:fs:2411:33
+      1  100.0%        Function: ^realpathSync node:fs:2455:22
+      1  100.0%          LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      1  100.0%            LazyCompile: ~tryFile node:internal/modules/cjs/loader:424:17
+      1    1.4%      LazyCompile: ~setupPerfHooks node:internal/bootstrap/pre_execution:324:24
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.4%      LazyCompile: ~set /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/application.js:359:23
+      1  100.0%        LazyCompile: ~defaultConfiguration /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/application.js:77:57
+      1  100.0%          LazyCompile: ~init /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/application.js:64:25
+      1  100.0%            LazyCompile: ~createApplication /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/express.js:37:27
+      1    1.4%      LazyCompile: ~send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:83:15
+      1  100.0%        LazyCompile: ~serveStatic /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/serve-static/index.js:72:31
+      1  100.0%          LazyCompile: ~handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~trim_prefix /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:293:23
+      1    1.4%      LazyCompile: ~send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:111:25
+      1  100.0%        LazyCompile: ~sendStatus /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:369:37
+      1  100.0%          LazyCompile: ~<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:55:25
+      1  100.0%            LazyCompile: ~handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      1    1.4%      LazyCompile: ~resolve node:path:1091:10
+      1  100.0%        LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:103:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.4%      LazyCompile: ~realpathSync node:fs:2455:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1    1.4%      LazyCompile: ~readableAddChunk node:internal/streams/readable:236:26
+      1  100.0%        LazyCompile: ~Readable.push node:internal/streams/readable:227:35
+      1  100.0%          LazyCompile: ~parserOnMessageComplete node:_http_common:146:33
+      1    1.4%      LazyCompile: ~readFile node:internal/fs/promises:811:24
+      1  100.0%        LazyCompile: ~getSource node:internal/modules/esm/load:32:25
+      1  100.0%          LazyCompile: ~defaultLoad node:internal/modules/esm/load:72:27
+      1  100.0%            LazyCompile: ~ObjectDefineProperty.__proto__ node:internal/modules/esm/loader:148:5
+      1    1.4%      LazyCompile: ~process_params /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:338:47
+      1  100.0%        LazyCompile: ~next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:177:16
+      1  100.0%          LazyCompile: ~handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:136:31
+      1  100.0%            LazyCompile: ~handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/application.js:165:29
+      1    1.4%      LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.4%      LazyCompile: ~processPromiseRejections node:internal/process/promises:211:34
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.4%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.4%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:103:28
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.4%      LazyCompile: ~parserOnIncoming node:_http_server:897:26
+      1  100.0%        Function: ^parserOnHeadersComplete node:_http_common:77:33
+      1    1.4%      LazyCompile: ~parseQueryStringValues /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:51:50
+      1  100.0%        LazyCompile: ~module.exports /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:239:27
+      1  100.0%          LazyCompile: ~parseExtendedQueryString /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/utils.js:289:34
+      1  100.0%            LazyCompile: ~query /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/middleware/query.js:39:24
+      1    1.4%      LazyCompile: ~parse /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/content-type/index.js:106:16
+      1  100.0%        Function: ^setCharset /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/utils.js:248:41
+      1  100.0%          LazyCompile: ~send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^sendStatus /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:369:37
+      1    1.4%      LazyCompile: ~originalurl /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/parseurl/index.js:65:22
+      1  100.0%        LazyCompile: ~serveStatic /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/serve-static/index.js:72:31
+      1  100.0%          Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~trim_prefix /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:293:23
+      1    1.4%      LazyCompile: ~onParserExecuteCommon node:_http_server:736:31
+      1  100.0%        Function: ^onParserExecute node:_http_server:679:25
+      1    1.4%      LazyCompile: ~onError node:_http_incoming:429:17
+      1  100.0%        LazyCompile: ~_destroy node:_http_incoming:221:55
+      1  100.0%          LazyCompile: ~_destroy node:internal/streams/destroy:70:18
+      1  100.0%            LazyCompile: ~destroy node:internal/streams/destroy:32:17
+      1    1.4%      LazyCompile: ~listOnTimeout node:internal/timers:507:25
+      1  100.0%        LazyCompile: ~processTimers node:internal/timers:487:25
+      1    1.4%      LazyCompile: ~isBuffer node:buffer:515:36
+      1  100.0%        LazyCompile: ~etag /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/etag/index.js:70:15
+      1  100.0%          LazyCompile: ~generateETag /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/utils.js:273:32
+      1  100.0%            LazyCompile: ~send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:111:25
+      1    1.4%      LazyCompile: ~initializeGlobalConsole node:internal/console/constructor:687:33
+      1  100.0%        LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:103:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.4%      LazyCompile: ~getStatsFromBinding node:internal/fs/utils:533:29
+      1  100.0%        LazyCompile: ~statSync node:fs:1575:18
+      1  100.0%          LazyCompile: ~tryStatSync node:internal/modules/esm/resolve:183:3
+      1  100.0%            LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:297:28
+      1    1.4%      LazyCompile: ~get node:_http_incoming:112:16
+      1  100.0%        LazyCompile: ~parserOnIncoming node:_http_server:897:26
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.4%      LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:297:28
+      1  100.0%        LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:886:23
+      1  100.0%          LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1025:30
+      1  100.0%            LazyCompile: ~ObjectDefineProperty.__proto__ node:internal/modules/esm/loader:148:5
+      1    1.4%      LazyCompile: ~emit node:events:460:44
+      1  100.0%        LazyCompile: ~endReadableNT node:internal/streams/readable:1351:23
+      1  100.0%          LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.4%      LazyCompile: ~createError /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/http-errors/index.js:49:22
+      1  100.0%        LazyCompile: ~createHttpError /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:977:26
+      1  100.0%          LazyCompile: ~error /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:267:45
+      1  100.0%            LazyCompile: ~onStatError /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:412:57
+      1    1.4%      LazyCompile: ~contentType /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:619:32
+      1  100.0%        LazyCompile: ~sendStatus /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:369:37
+      1  100.0%          LazyCompile: ~<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:55:25
+      1  100.0%            Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      1    1.4%      LazyCompile: ~connectionListenerInternal node:_http_server:488:36
+      1  100.0%        LazyCompile: ~defaultTriggerAsyncIdScope node:internal/async_hooks:455:36
+      1  100.0%          LazyCompile: ~connectionListener node:_http_server:482:28
+      1  100.0%            Function: ^emit node:events:460:44
+      1    1.4%      LazyCompile: ~clearRequestTimeout node:_http_server:819:29
+      1  100.0%        Function: ^emit node:events:460:44
+      1  100.0%          Function: ^endReadableNT node:internal/streams/readable:1351:23
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.4%      LazyCompile: ~cleanParser node:_http_common:235:21
+      1  100.0%        LazyCompile: ~parsersCb node:_http_common:169:65
+      1  100.0%          LazyCompile: ~alloc node:internal/freelist:15:8
+      1  100.0%            LazyCompile: ~connectionListenerInternal node:_http_server:488:36
+      1    1.4%      LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:253:58
+      1  100.0%        LazyCompile: ~moduleProvider node:internal/modules/esm/loader:452:28
+      1  100.0%          /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      1    1.4%      LazyCompile: ~app.<computed> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/application.js:490:25
+      1  100.0%        LazyCompile: ~send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:111:25
+      1  100.0%          LazyCompile: ~sendStatus /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:369:37
+      1  100.0%            LazyCompile: ~<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:55:25
+      1    1.4%      LazyCompile: ~afterShutdown node:net:499:23
+      1    1.4%      LazyCompile: ~addListener node:events:604:58
+      1  100.0%        LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:168:29
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.4%      LazyCompile: ~addAddress node:internal/blocklist:60:13
+      1  100.0%        Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1    1.4%      LazyCompile: ~_storeHeader node:_http_outgoing:420:22
+      1  100.0%        LazyCompile: ~writeHead node:_http_server:309:19
+      1  100.0%          Function: ^_implicitHeader node:_http_server:304:68
+      1  100.0%            LazyCompile: ~write_ node:_http_outgoing:831:16
+      1    1.4%      LazyCompile: ~_send node:_http_outgoing:336:49
+      1  100.0%        LazyCompile: ~write_ node:_http_outgoing:831:16
+      1  100.0%          LazyCompile: ~end node:_http_outgoing:953:45
+      1  100.0%            LazyCompile: ~send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:111:25
+      1    1.4%      LazyCompile: ~_flushOutput node:_http_outgoing:1075:63
+      1  100.0%        LazyCompile: ~_writeRaw node:_http_outgoing:371:19
+      1  100.0%          LazyCompile: ~_send node:_http_outgoing:336:49
+      1  100.0%            LazyCompile: ~write_ node:_http_outgoing:831:16
+      1    1.4%      LazyCompile: ~SendStream /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:96:21
+      1  100.0%        Function: ^send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:83:15
+      1  100.0%          LazyCompile: ~serveStatic /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/serve-static/index.js:72:31
+      1  100.0%            Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      1    1.4%      LazyCompile: ~Module._nodeModulePaths node:internal/modules/cjs/loader:669:37
+      1  100.0%        LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:193:34
+      1  100.0%          LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:147:60
+      1  100.0%            /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      1    1.4%      LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%        LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%          LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.4%      LazyCompile: ~Module node:internal/modules/cjs/loader:190:16
+      1  100.0%        LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:193:34
+      1  100.0%          LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:147:60
+      1  100.0%            /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      1    1.4%      LazyCompile: ~FileHandle node:internal/fs/promises:122:14
+      1  100.0%        LazyCompile: ~open node:internal/fs/promises:455:20
+      1  100.0%          /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      1    1.4%      LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      1  100.0%        LazyCompile: ~Socket node:net:317:16
+      1  100.0%          LazyCompile: ~WriteStream node:tty:85:21
+      1  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1    1.4%      LazyCompile: ~<anonymous> node:internal/fs/utils:360:35
+      1  100.0%        LazyCompile: ~<anonymous> node:internal/fs/utils:671:38
+      1  100.0%          LazyCompile: ~realpathSync node:fs:2455:22
+      1  100.0%            LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      1    1.4%      Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1  100.0%            LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:521:29
+      1    1.4%      Function: ~<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/http-errors/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1109:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1164:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1021:33
+      1    1.4%      Function: ^<anonymous> node:internal/validators:369:42
+      1  100.0%        Function: ^compileFunction node:vm:316:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1069:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1109:37
+      1    1.4%      /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      1  100.0%        Function: ~<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1109:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1164:37
+
+     81    4.2%  /usr/lib/x86_64-linux-gnu/libc.so.6
+     20   24.7%    /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      5   25.0%      /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      2   40.0%        LazyCompile: ~contentType /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:619:32
+      2  100.0%          LazyCompile: ~sendStatus /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:369:37
+      2  100.0%            LazyCompile: ~<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:55:25
+      1   20.0%        Function: ^pipe /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:506:43
+      1  100.0%          Function: ^serveStatic /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/serve-static/index.js:72:31
+      1  100.0%            Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      1   20.0%        Function: ^normalize node:path:1127:12
+      1  100.0%          Function: ^pipe /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:506:43
+      1  100.0%            Function: ^serveStatic /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/serve-static/index.js:72:31
+      1   20.0%        Function: ^nextPart node:fs:2444:31
+      1  100.0%          Function: ^realpathSync node:fs:2455:22
+      1  100.0%            Function: ^toRealPath node:internal/modules/cjs/loader:433:20
+      2   10.0%      LazyCompile: ~fastparse /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/parseurl/index.js:95:20
+      2  100.0%        LazyCompile: ~parseurl /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/parseurl/index.js:35:19
+      2  100.0%          LazyCompile: ~getPathname /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:537:21
+      2  100.0%            LazyCompile: ~next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:177:16
+      2   10.0%      Function: ^isTraceHTTPEnabled node:internal/http:40:28
+      1   50.0%        Function: ^_finish node:_http_server:226:52
+      1  100.0%          Function: ^end node:_http_outgoing:953:45
+      1  100.0%            Function: ^send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:111:25
+      1   50.0%        Function: ^ServerResponse node:_http_server:189:24
+      1  100.0%          Function: ^parserOnIncoming node:_http_server:897:26
+      1  100.0%            Function: ^parserOnHeadersComplete node:_http_common:77:33
+      1    5.0%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1    5.0%      LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      1  100.0%        LazyCompile: ~endReadable node:internal/streams/readable:1341:21
+      1  100.0%          LazyCompile: ~Readable.read node:internal/streams/readable:394:35
+      1  100.0%            LazyCompile: ~resume_ node:internal/streams/readable:984:17
+      1    5.0%      LazyCompile: ~insert node:internal/priority_queue:34:9
+      1  100.0%        LazyCompile: ~insert node:internal/timers:350:16
+      1  100.0%          LazyCompile: ~setUnrefTimeout node:internal/timers:372:25
+      1  100.0%            LazyCompile: ~cache node:internal/http:24:15
+      1    5.0%      LazyCompile: ~_addListener node:events:541:22
+      1  100.0%        LazyCompile: ~addListener node:events:604:58
+      1  100.0%          LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:168:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1    5.0%      LazyCompile: ~Server node:_http_server:410:16
+      1  100.0%        LazyCompile: ~createServer node:http:59:22
+      1  100.0%          LazyCompile: ~listen /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/application.js:633:29
+      1  100.0%            Script: ~<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:1:1
+      1    5.0%      LazyCompile: ~Readable.push node:internal/streams/readable:227:35
+      1  100.0%        LazyCompile: ~parserOnMessageComplete node:_http_common:146:33
+      1    5.0%      LazyCompile: ~EventEmitter.init node:events:337:29
+      1  100.0%        Function: ^EventEmitter node:events:212:22
+      1  100.0%          Function: ^Stream node:internal/streams/legacy:10:16
+      1  100.0%            LazyCompile: ~OutgoingMessage node:_http_outgoing:103:25
+      1    5.0%      LazyCompile: ~<anonymous> node:internal/validators:240:3
+      1  100.0%        LazyCompile: ~SocketAddress node:internal/socketaddress:47:14
+      1  100.0%          LazyCompile: ~addAddress node:internal/blocklist:60:13
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1    5.0%      Function: ~<anonymous> node:internal/modules/cjs/helpers:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1  100.0%            Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1    5.0%      Function: ^_destroy node:internal/streams/destroy:70:18
+      1  100.0%        Function: ^destroy node:internal/streams/destroy:32:17
+      1  100.0%          LazyCompile: ~finish node:internal/streams/writable:747:16
+      1  100.0%            LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    5.0%      Function: ^Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:894:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:800:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1049:36
+
+     35    1.8%  fwrite@@GLIBC_2.2.5
+     35  100.0%    /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      5   14.3%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:103:28
+      5  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      5  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      3    8.6%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      3  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      3  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      3  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      3    8.6%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      3  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      3  100.0%            Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      2    5.7%      LazyCompile: ~value node:internal/console/constructor:336:20
+      2  100.0%        LazyCompile: ~log node:internal/console/constructor:375:6
+      2  100.0%          /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      2  100.0%            LazyCompile: ~<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:77:33
+      2    5.7%      LazyCompile: ~realpathSync node:fs:2455:22
+      2  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      2  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      2  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2    5.7%      LazyCompile: ~onstat /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/send/index.js:717:33
+      2  100.0%        LazyCompile: ~<anonymous> node:fs:201:10
+      2    5.7%      /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      1   50.0%        LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:297:28
+      1  100.0%          LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:886:23
+      1  100.0%            LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1025:30
+      1   50.0%        Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      1  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:304:14
+      1  100.0%            Function: ^<anonymous> node:internal/bootstrap/loaders:290:15
+      1    2.9%      LazyCompile: ~stringify node:internal/modules/esm/translators:94:19
+      1  100.0%        LazyCompile: ~moduleStrategy node:internal/modules/esm/translators:114:56
+      1  100.0%          LazyCompile: ~moduleProvider node:internal/modules/esm/loader:452:28
+      1  100.0%            /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      1    2.9%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:168:29
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.9%      LazyCompile: ~setupListenHandle node:net:1416:27
+      1  100.0%        LazyCompile: ~listenInCluster node:net:1501:25
+      1  100.0%          LazyCompile: ~Server.listen node:net:1544:35
+      1  100.0%            LazyCompile: ~listen /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/application.js:633:29
+      1    2.9%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.9%      LazyCompile: ~initializeGlobalConsole node:internal/console/constructor:687:33
+      1  100.0%        LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:103:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.9%      LazyCompile: ~handleMainPromise node:internal/modules/run_main:62:33
+      1  100.0%        /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      1    2.9%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1  100.0%          Function: ~<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/debug/src/node.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1109:37
+      1    2.9%      LazyCompile: ~cache node:internal/http:24:15
+      1  100.0%        LazyCompile: ~utcDate node:internal/http:19:17
+      1  100.0%          LazyCompile: ~_storeHeader node:_http_outgoing:420:22
+      1  100.0%            LazyCompile: ~writeHead node:_http_server:309:19
+      1    2.9%      LazyCompile: ~_send node:_http_outgoing:336:49
+      1  100.0%        LazyCompile: ~write_ node:_http_outgoing:831:16
+      1  100.0%          LazyCompile: ~end node:_http_outgoing:953:45
+      1  100.0%            LazyCompile: ~send /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/response.js:111:25
+      1    2.9%      LazyCompile: ~Readable.push node:internal/streams/readable:227:35
+      1  100.0%        LazyCompile: ~parserOnMessageComplete node:_http_common:146:33
+      1    2.9%      LazyCompile: ~ObjectDefineProperty.__proto__ node:internal/modules/esm/loader:148:5
+      1  100.0%        LazyCompile: ~resolve node:internal/modules/esm/loader:784:16
+      1  100.0%          LazyCompile: ~getModuleJob node:internal/modules/esm/loader:410:21
+      1  100.0%            LazyCompile: ~import node:internal/modules/esm/loader:505:15
+      1    2.9%      LazyCompile: ~ModuleJob node:internal/modules/esm/module_job:53:14
+      1  100.0%        LazyCompile: ~#createModuleJob node:internal/modules/esm/loader:451:19
+      1  100.0%          LazyCompile: ~getModuleJob node:internal/modules/esm/loader:410:21
+      1  100.0%            /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      1    2.9%      LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:894:35
+      1  100.0%          LazyCompile: ~<anonymous> node:internal/modules/esm/translators:232:36
+      1  100.0%            /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      1    2.9%      LazyCompile: ~<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:55:25
+      1  100.0%        Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          LazyCompile: ~next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:116:16
+      1  100.0%            Function: ^dispatch /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:98:45
+      1    2.9%      LazyCompile: ~<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/debug/src/node.js:34:64
+      1  100.0%        /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+      1  100.0%          Function: ~<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/debug/src/node.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1109:37
+      1    2.9%      Function: ~<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/debug/src/node.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1109:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1164:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:1021:33
+

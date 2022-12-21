@@ -1,0 +1,137 @@
+Statistical profiling result from isolate_bloq.log, (58409 ticks, 1 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  58072   99.4%          /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+     75    0.1%          /usr/lib/x86_64-linux-gnu/libc.so.6
+      2    0.0%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      6    0.0%    2.3%  LazyCompile: *normalizeString node:path:66:25
+      2    0.0%    0.8%  RegExp: ;\s*charset\s*=
+      2    0.0%    0.8%  LazyCompile: *fastparse /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/parseurl/index.js:95:20
+      2    0.0%    0.8%  Function: ^validateString node:internal/validators:160:24
+      2    0.0%    0.8%  Function: ^<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:32:23
+      1    0.0%    0.4%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.4%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      1    0.0%    0.4%  LazyCompile: *next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:177:16
+      1    0.0%    0.4%  Function: ^write_ node:_http_outgoing:831:16
+      1    0.0%    0.4%  Function: ^writeOrBuffer node:internal/streams/writable:367:23
+      1    0.0%    0.4%  Function: ^update node:internal/crypto/hash:99:40
+      1    0.0%    0.4%  Function: ^unenroll node:timers:78:18
+      1    0.0%    0.4%  Function: ^trim_prefix /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:293:23
+      1    0.0%    0.4%  Function: ^stat node:internal/modules/cjs/loader:157:14
+      1    0.0%    0.4%  Function: ^shift node:internal/fixed_queue:80:8
+      1    0.0%    0.4%  Function: ^setHasRejectionToWarn node:internal/process/promises:75:31
+      1    0.0%    0.4%  Function: ^pushAsyncContext node:internal/async_hooks:539:26
+      1    0.0%    0.4%  Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    0.0%    0.4%  Function: ^processPromiseRejections node:internal/process/promises:211:34
+      1    0.0%    0.4%  Function: ^parseObject /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:115:28
+      1    0.0%    0.4%  Function: ^parse /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/content-type/index.js:106:16
+      1    0.0%    0.4%  Function: ^module.exports /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/parse.js:239:27
+      1    0.0%    0.4%  Function: ^isTraceHTTPEnabled node:internal/http:40:28
+      1    0.0%    0.4%  Function: ^insertGuarded node:internal/timers:325:23
+      1    0.0%    0.4%  Function: ^hasHooks node:internal/async_hooks:470:18
+      1    0.0%    0.4%  Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:136:31
+      1    0.0%    0.4%  Function: ^get node:internal/streams/writable:791:8
+      1    0.0%    0.4%  Function: ^fromStringFast node:buffer:418:24
+      1    0.0%    0.4%  Function: ^format /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/content-type/index.js:65:17
+      1    0.0%    0.4%  Function: ^decode /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/qs/lib/utils.js:111:23
+      1    0.0%    0.4%  Function: ^checkIsHttpToken node:_http_common:220:26
+      1    0.0%    0.4%  Function: ^append node:internal/linkedlist:30:16
+      1    0.0%    0.4%  Function: ^_storeHeader node:_http_outgoing:420:22
+      1    0.0%    0.4%  Function: ^_addListener node:events:541:22
+      1    0.0%    0.4%  Function: ^Mime.lookup /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/mime/mime.js:69:33
+      1    0.0%    0.4%  Function: ^Hash node:internal/crypto/hash:62:14
+      1    0.0%    0.4%  Function: ^ContentType /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/content-type/index.js:219:22
+      1    0.0%    0.4%  Function: ^<anonymous> node:internal/validators:240:3
+      1    0.0%    0.4%  Function: ^<anonymous> node:_http_outgoing:618:45
+      1    0.0%    0.4%  Function: ^<anonymous> /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/index.js:280:64
+
+ [C++]:
+   ticks  total  nonlib   name
+     90    0.2%   34.6%  __write@@GLIBC_2.2.5
+     30    0.1%   11.5%  fwrite@@GLIBC_2.2.5
+     20    0.0%    7.7%  epoll_pwait@@GLIBC_2.6
+     11    0.0%    4.2%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+      6    0.0%    2.3%  __mprotect@@GLIBC_PRIVATE
+      6    0.0%    2.3%  _IO_file_xsputn@@GLIBC_2.2.5
+      5    0.0%    1.9%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      5    0.0%    1.9%  pthread_cond_signal@@GLIBC_2.3.2
+      5    0.0%    1.9%  __libc_malloc@@GLIBC_2.2.5
+      4    0.0%    1.5%  __read@@GLIBC_2.2.5
+      4    0.0%    1.5%  __pthread_mutex_unlock@GLIBC_2.2.5
+      3    0.0%    1.2%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      2    0.0%    0.8%  operator delete(void*)@@GLIBCXX_3.4
+      2    0.0%    0.8%  cfree@GLIBC_2.2.5
+      2    0.0%    0.8%  __pthread_mutex_lock@GLIBC_2.2.5
+      2    0.0%    0.8%  __clock_gettime@@GLIBC_PRIVATE
+      1    0.0%    0.4%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<unsigned long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const@@GLIBCXX_3.4
+      1    0.0%    0.4%  std::ostream::put(char)@@GLIBCXX_3.4
+      1    0.0%    0.4%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      1    0.0%    0.4%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const@@GLIBCXX_3.4
+      1    0.0%    0.4%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      1    0.0%    0.4%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.0%    0.4%  std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.0%    0.4%  operator new(unsigned long)@@GLIBCXX_3.4
+      1    0.0%    0.4%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      1    0.0%    0.4%  __munmap@@GLIBC_PRIVATE
+      1    0.0%    0.4%  __errno_location@@GLIBC_2.2.5
+      1    0.0%    0.4%  _IO_do_write@@GLIBC_2.2.5
+      1    0.0%    0.4%  _IO_default_xsputn@@GLIBC_2.2.5
+
+ [Summary]:
+   ticks  total  nonlib   name
+     49    0.1%   18.8%  JavaScript
+    210    0.4%   80.8%  C++
+     71    0.1%   27.3%  GC
+  58149   99.6%          Shared libraries
+      1    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     48   40.3%    0.1%  __write@@GLIBC_2.2.5
+     24   20.2%    0.0%  fwrite@@GLIBC_2.2.5
+     10    8.4%    0.0%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+      5    4.2%    0.0%  _IO_file_xsputn@@GLIBC_2.2.5
+      4    3.4%    0.0%  __mprotect@@GLIBC_PRIVATE
+      4    3.4%    0.0%  __libc_malloc@@GLIBC_2.2.5
+      3    2.5%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      3    2.5%    0.0%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      2    1.7%    0.0%  operator delete(void*)@@GLIBCXX_3.4
+      2    1.7%    0.0%  cfree@GLIBC_2.2.5
+      2    1.7%    0.0%  __pthread_mutex_unlock@GLIBC_2.2.5
+      2    1.7%    0.0%  __pthread_mutex_lock@GLIBC_2.2.5
+      2    1.7%    0.0%  __clock_gettime@@GLIBC_PRIVATE
+      1    0.8%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<unsigned long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const@@GLIBCXX_3.4
+      1    0.8%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const@@GLIBCXX_3.4
+      1    0.8%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.8%    0.0%  std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.8%    0.0%  operator new(unsigned long)@@GLIBCXX_3.4
+      1    0.8%    0.0%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      1    0.8%    0.0%  _IO_do_write@@GLIBC_2.2.5
+      1    0.8%    0.0%  _IO_default_xsputn@@GLIBC_2.2.5
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  58072   99.4%  /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+  57592   99.2%    /home/drmaquino/.nvm/versions/node/v16.18.1/bin/node
+  55839   97.0%      Function: ^pbkdf2Sync node:internal/crypto/pbkdf2:69:20
+  55582   99.5%        Function: ^<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:32:23
+  55582  100.0%          Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+  55028   99.0%            Function: ^next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:116:16
+   1036    1.8%      LazyCompile: ~pbkdf2Sync node:internal/crypto/pbkdf2:69:20
+    955   92.2%        LazyCompile: ~<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:32:23
+    699   73.2%          Function: ^handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+    699  100.0%            LazyCompile: ~next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:116:16
+    256   26.8%          LazyCompile: ~handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+    256  100.0%            LazyCompile: ~next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:116:16
+     81    7.8%        LazyCompile: ~<anonymous> file:///home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/server.js:14:21
+     81  100.0%          LazyCompile: ~handle /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/layer.js:86:49
+     81  100.0%            LazyCompile: ~next /home/drmaquino/Documents/CODERHOUSE/coderhouse-backend-37620/clase-16-gzip-logs-debug-profiling/desafiosYEjemplos/2da-parte-profiling/ejemplos/Profiling/node_modules/express/lib/router/route.js:116:16
+

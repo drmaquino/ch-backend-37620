@@ -1,0 +1,77 @@
+class A {
+    constructor(b) {
+        this.b = b
+    }
+
+    saludar() {
+        this.b.guardar('hola')
+    }
+}
+
+//================================
+// si fuera typescript o algun lenguaje con tipado estatico
+// interface B {
+//     guardar(dato);
+//     recuperar();
+// }
+
+// en JS
+class B {
+    guardar(dato) { throw new Error() }
+    recuperar() { throw new Error() }
+}
+
+// ================================
+// hay una db conectada!
+
+class Bdb extends B {
+    guardar(dato) { db.insert(dato) }
+    recuperar() { return db.select() }
+}
+// ================================
+class Bmock extends B {
+    guardar(dato) { console.log('guardado!')  }
+    recuperar() { return 'dato mock' }
+}
+//=================================
+class BproxyEncriptqcion extends B {
+    constructor(b) { super(); this.b = b }
+    guardar(dato) {
+        dato = encriptar(dato)
+        this.b.guardar(dato) }
+    recuperar() {
+        return desencriptar(this.b.recuperar()) }
+}
+//=================================
+class BproxyCache extends B {
+    constructor(b) {
+        super()
+        this.b = b
+        this.cache = {}
+    }
+    guardar(dato) {
+        this.b.guardar(dato)
+    }
+    recuperar(id) {
+        if (!this.cache[id]) {
+            this.cache[id] = this.b.recuperar(id)
+        }
+        return this.cache[id]
+    }
+}
+//=================================
+class BproxyAuth extends B {
+    constructor(b) {
+        super()
+        this.b = b
+        this.authValidator
+    }
+    guardar(dato) {
+        this.authValidator(dato) // puede lanzar!
+        this.b.guardar(dato)
+    }
+    recuperar(id) {
+        this.authValidator(dato) // puede lanzar!
+        return this.b.recuperar(id)
+    }
+}
