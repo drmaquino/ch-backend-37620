@@ -1,5 +1,5 @@
-import WhatsappSender from './TwilioWhatsappSender.js'
-import { twilioAccountSid, twilioAuthToken, twilioWhatsappPhoneNumber } from '../../config.js'
+import { NODE_ENV, twilioAccountSid, twilioAuthToken, twilioWhatsappPhoneNumber } from '../../config.js'
+import MockWhatsappSender from './MockWspSender.js'
 
 const credenciales = {
     numero: twilioWhatsappPhoneNumber,
@@ -7,4 +7,13 @@ const credenciales = {
     contrasenia: twilioAuthToken
 }
 
-export const clienteWsp = new WhatsappSender(credenciales)
+export let clienteWsp
+
+switch (NODE_ENV) {
+    case 'production':
+        const { default: TwilioWhatsappSender } = await import('./TwilioWhatsappSender.js')
+        clienteWsp = new TwilioWhatsappSender(credenciales)
+        break
+    default:
+        clienteWsp = new MockWhatsappSender()
+}
